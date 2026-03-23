@@ -1,0 +1,32 @@
+#!wing
+#!version=11.0
+##################################################################
+# Wing project file                                              #
+##################################################################
+[project attributes]
+proj.directory-list = [{'dirloc': None,
+                        'excludes': [],
+                        'filter': '*',
+                        'include_hidden': False,
+                        'recursive': True,
+                        'watch_for_changes': True},
+                       {'dirloc': loc('../..'),
+                        'excludes': ['.claude',
+                                     'highjax.egg-info',
+                                     'build',
+                                     'octane/target',
+                                     'pytest_report.html'],
+                        'filter': 'All Source Files',
+                        'include_hidden': False,
+                        'recursive': True,
+                        'watch_for_changes': True}]
+proj.env-vars = {None: ('custom',
+                        ['PYTHONSTARTUP_CODE=import jax, jax.numpy as jnp'])}
+proj.file-type = 'shared'
+proj.main-file = loc('../../scripts/_wing_run.py')
+proj.shared-attribute-names = ['-proj.launch-config',
+                               '-console.toolbox',
+                               '+proj.env-vars']
+testing.auto-test-file-specs = (('regex',
+                                 'tests/.*test[^./]*.py.?$'),)
+testing.test-framework = {None: ':internal pytest'}

@@ -1,0 +1,31 @@
+[package]
+name = "octane"
+version = "0.1.0"
+edition = "2021"
+description = "Ratatui-based TUI for browsing Highway episodes"
+authors = ["Ram Rachum <ram@rachum.com>"]
+
+[dependencies]
+leona = { path = "src/leona" }
+anyhow = "1"
+ratatui = "0.29"
+crossterm = "0.28"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tracing = "0.1"
+chrono = "0.4"
+clap = { version = "4", features = ["derive"] }
+ansi-to-tui = "7"
+resvg = "0.45"
+image = { version = "0.25", default-features = false, features = ["png"] }
+rayon = "1.10"
+tempfile = "3"
+notify = "6"
+serde_yaml = "0.9"
+rusqlite = { version = "0.31", features = ["bundled"] }
+parquet = { version = "54", default-features = false, features = ["arrow", "zstd"] }
+arrow = { version = "54", default-features = false }
+dirs = "6"
+
+[dev-dependencies]
+tempfile = "3"

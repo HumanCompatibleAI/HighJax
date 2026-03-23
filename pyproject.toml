@@ -1,0 +1,71 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "highjax-rl"
+version = "0.1.0"
+description = "HighJax: A JAX implementation of the HighwayEnv driving environment"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.14"
+authors = [
+    {name = "Ram Rachum", email = "ram@rachum.com"},
+]
+classifiers = [
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Artificial Life",
+    "Environment :: GPU",
+    "Environment :: GPU :: NVIDIA CUDA",
+]
+dependencies = [
+    "jax>=0.9.2",
+    "jaxlib>=0.9.2",
+    "flax>=0.12.4",
+    "chex>=0.1.91",
+    "gymnasium>=1.2.3",
+]
+
+[project.optional-dependencies]
+trainer = [
+    "optax>=0.2.6",
+    "click>=8.3.1",
+    "colorama>=0.4.6",
+    "tqdm>=4.67.3",
+    "pyyaml>=6.0.3",
+    "pandas>=3.0.1",
+    "fastparquet>=2025.12.0",
+    "pyarrow>=23.0.1",
+    "duckdb>=1.4.4",
+    "rich>=14.3.3",
+]
+cuda = ["jax[cuda]>=0.9.2"]
+cuda12 = ["jax[cuda12]>=0.9.2"]
+tpu = ["jax[tpu]>=0.9.2"]
+tests = [
+    "numpy>=2.3.5",
+    "pytest>=9.0.2",
+    "pytest-xdist>=3.8.0",
+    "pytest-html>=4.2.0",
+]
+
+[project.scripts]
+highjax-trainer = "highjax_trainer:cli"
+highjax_trainer = "highjax_trainer:cli"
+
+[tool.setuptools.package-data]
+highjax = ["behaviors/*.json"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["highjax*"]
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    "ignore:The distutils package is deprecated:DeprecationWarning",
+]
