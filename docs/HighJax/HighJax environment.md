@@ -171,3 +171,4 @@ Highway is inspired by HighwayEnv but has intentional simplifications for the JA
 - **Reward post-crash zeroing** — Highway explicitly zeros the reward on post-crash timesteps. HighwayEnv continues computing the formula with `collision=1`, yielding a small positive value instead of exactly zero.
 - **No on-road reward multiplier** — HighwayEnv multiplies the reward by an `on_road` flag (0 if vehicle is off-road). Highway omits this since vehicles rarely go off-road on a straight highway.
 - **MOBIL distance approximation** — HighwayEnv uses exact pairwise lane distances for the MOBIL incentive calculation. Highway approximates follower-to-leader distance as the sum of ego-to-front and ego-to-rear distances, which is exact when vehicles are collinear in x.
+# CI test
