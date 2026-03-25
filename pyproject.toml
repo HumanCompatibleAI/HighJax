@@ -68,7 +68,7 @@ highjax = ["behaviors/*.json"]
 
 [tool.release-pypi]
 readme-replacements = [
-    ["demo.webp", "demo.gif"],
+    ["demo.webp", "demo-short.gif"],
 ]
 
 [tool.setuptools.packages.find]
