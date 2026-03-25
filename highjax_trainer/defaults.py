@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 # Learning rates
-DEFAULT_ACTOR_LR = 0.0003
+DEFAULT_ACTOR_LR = 0.9999
 DEFAULT_CRITIC_LR = 0.003
 DEFAULT_CRITIC_LR_END = None
 
