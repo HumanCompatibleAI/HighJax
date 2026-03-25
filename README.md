@@ -14,10 +14,10 @@ HighJax was produced as part of our research project about [BXRL:Behavior-Explai
 ## Installation
 
 ```bash
-pip install highjax # Minimal installation
-pip install "highjax[cuda12]" # Including GPU support
-pip install "highjax[trainer]" # Including PPO implementation
-pip install "highjax[cuda12,trainer]" # Including both
+pip install highjax-rl # Minimal installation
+pip install "highjax-rl[cuda12]" # Including GPU support
+pip install "highjax-rl[trainer]" # Including PPO implementation
+pip install "highjax-rl[cuda12,trainer]" # Including both
 ```
 
 ## Quick Start
