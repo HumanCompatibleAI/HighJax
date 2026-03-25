@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "highjax-rl"
-version = "0.1.1"
+version = "0.1.2"
 description = "HighJax: A JAX implementation of the HighwayEnv driving environment"
 readme = "README.md"
 license = "MIT"
