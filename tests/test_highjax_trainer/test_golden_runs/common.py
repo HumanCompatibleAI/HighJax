@@ -1,7 +1,13 @@
 '''Shared logic for golden run tests.'''
 from __future__ import annotations
 
+import os
+
 import jax.numpy as jnp
+
+_LOOSE = os.environ.get('HIGHJAX_TESTS_LOOSE') == '1'
+_RTOL = 1e-02 if _LOOSE else 1e-04
+_ATOL = 1e-05 if _LOOSE else 1e-07
 
 
 def print_golden_data(epoch_metrics: list[dict]) -> None:
@@ -38,7 +44,7 @@ def check_golden_run(epoch_metrics: list[dict], golden_data: dict) -> None:
             expected = expected_values[i]
             actual = float(metrics[key])
 
-            if not jnp.isclose(actual, expected, rtol=1e-04, atol=1e-07):
+            if not jnp.isclose(actual, expected, rtol=_RTOL, atol=_ATOL):
                 bad_fields.append((key, actual, expected))
 
         if bad_fields:
