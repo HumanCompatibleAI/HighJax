@@ -1,7 +1,7 @@
 # HighJax: Highway Driving environment for Reinforcement Learning research
 
 <p align="center">
-    <img src="misc/videos/demo.webp" alt="HighJax PPO training demo"><br/>
+    <img src="https://raw.githubusercontent.com/HumanCompatibleAI/HighJax/master/misc/videos/demo.webp" alt="HighJax PPO training demo"><br/>
     <em>PPO agent learning to drive on a 4-lane highway</em>
 </p>
 
@@ -117,7 +117,7 @@ octane draw -t ~/.highjax/t/2026-03-15-20-02-25-101327 --epoch 300 -e 0 --timest
 ```
 
 <p align="center">
-    <img src="misc/images/figure.png" alt="Octane figure output" width="428"><br/>
+    <img src="https://raw.githubusercontent.com/HumanCompatibleAI/HighJax/master/misc/images/figure.png" alt="Octane figure output" width="428"><br/>
 </p>
 
 ### Behavior crafting
@@ -125,7 +125,7 @@ octane draw -t ~/.highjax/t/2026-03-15-20-02-25-101327 --epoch 300 -e 0 --timest
 Octane includes a behavior explorer for defining measurable policy properties. While watching an episode, press `b` to capture a scenario — mark which actions you want (positive weight) or don't want (negative weight) at that traffic state. Name it, and Octane saves the behavior to `~/.highjax/behaviors/`. The next time you run `highjax-trainer train`, all discovered behaviors are evaluated every epoch and their scores are recorded as `behavior.{name}` columns in `epochia.parquet`.
 
 <p align="center">
-    <img src="misc/images/behavior_tui.png" alt="Behavior crafting dialog in Octane" width="364"><br/>
+    <img src="https://raw.githubusercontent.com/HumanCompatibleAI/HighJax/master/misc/images/behavior_tui.png" alt="Behavior crafting dialog in Octane" width="364"><br/>
     <em>Defining a behavior scenario in Octane</em>
 </p>
 
