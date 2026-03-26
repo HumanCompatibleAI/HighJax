@@ -9,7 +9,7 @@ HighJax is an autonomous driving environment for Reinforcement Learning research
 
 Besides being much faster than the original, it provides Octane, a Rust-based TUI for examining your experiment runs. Octane provides an interface for defining behaviors and then measuring how much each policy exhibits them.
 
-HighJax was produced as part of our research project about [BXRL:Behavior-Explainable Reinforcement Learning](https://arxiv.org/abs/XXXX.XXXXX).
+HighJax was produced as part of our research project about [BXRL: Behavior-Explainable Reinforcement Learning](https://arxiv.org/abs/2603.23738).
 
 ## Installation
 
@@ -154,9 +154,13 @@ Full documentation is in the `docs/` folder:
 If you use HighJax in your research, please cite:
 
 ```bibtex
-@article{rachum2025bxrl,
+@article{rachum2026bxrl,
   title={BXRL: Behavior-Explainable Reinforcement Learning},
-  author={Rachum, Ram and Amitai, Yotam and Nakar, Yonatan and Mirsky, Reuth and Allen, Cameron},
-  year={2025}
+  author={Ram Rachum and Yotam Amitai and Yonatan Nakar and Reuth Mirsky and Cameron Allen},
+  year={2026},
+  eprint={2603.23738},
+  archivePrefix={arXiv},
+  primaryClass={cs.LG},
+  url={https://arxiv.org/abs/2603.23738},
 }
 ```
