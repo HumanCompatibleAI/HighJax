@@ -71,7 +71,7 @@ pub fn init(config: LogConfig) -> Result<PathBuf> {
 
     // Generate log filename with timestamp
     let now = Local::now();
-    let timestamp = now.format("%Y-%m-%d-%H-%M-%S");
+    let timestamp = now.format("%Y-%m-%d_%H-%M-%S");
     let log_filename = format!("{timestamp}_{}.log", config.app_name);
     let log_path = logs_dir.join(&log_filename);
 

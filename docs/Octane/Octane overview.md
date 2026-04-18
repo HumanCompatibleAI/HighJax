@@ -56,13 +56,13 @@ Data is loaded from `sample_es.parquet` (preferred, used by modern HighJax runs;
 
 ## Trek discovery
 
-On startup, Octane scans `~/.highjax/t/` (or `$HIGHJAX_HOME/t/`) for directories containing `meta.yaml` or `sample_es.parquet`. Results are sorted by directory name (timestamp format like `2026-01-31-02-13-44-322216`), so the most recent trek appears last.
+On startup, Octane scans `~/.highjax/t/` (or `$HIGHJAX_HOME/t/`) for directories containing `meta.yaml` or `sample_es.parquet`. Results are sorted by directory name (timestamp format like `2026-01-31_02-13-44_322216`), so the most recent trek appears last.
 
 Timing metadata comes from `meta.yaml`: `seconds_per_t` (policy timestep duration) and `seconds_per_sub_t` (sub-timestep duration, for environments with sub-stepping).
 
 ## Producing treks
 
-Treks are produced by running `highjax-trainer train`, which writes outputs to `~/.highjax/t/` (or `$HIGHJAX_HOME/t/`). Each training run creates a timestamped directory (e.g. `2026-01-31-02-13-44-322216`) containing `meta.yaml`, epoch data, and optionally `sample_es.parquet` with sampled episodes.
+Treks are produced by running `highjax-trainer train`, which writes outputs to `~/.highjax/t/` (or `$HIGHJAX_HOME/t/`). Each training run creates a timestamped directory (e.g. `2026-01-31_02-13-44_322216`) containing `meta.yaml`, epoch data, and optionally `sample_es.parquet` with sampled episodes.
 
 ## CLI usage
 
@@ -71,7 +71,7 @@ Treks are produced by running `highjax-trainer train`, which writes outputs to `
 octane
 
 # Open a specific trek
-octane -t ~/.highjax/t/2026-01-31-02-13-44-322216
+octane -t ~/.highjax/t/2026-01-31_02-13-44_322216
 
 # Open a breakdown parquet directly (auto-finds trek via meta.yaml)
 octane -t ~/.highjax/t/2026-.../breakdown/2026-..._a0_e200-200_.../es.parquet

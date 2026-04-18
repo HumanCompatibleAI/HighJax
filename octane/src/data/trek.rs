@@ -540,7 +540,7 @@ pub struct ParquetSource {
     /// Short display name (e.g. "sample_es" or breakdown run name) for UI.
     pub display: String,
     /// Path relative to trek root (e.g. "sample_es.parquet" or
-    /// "breakdown/2026-02-20-13-07-24_a0_e100-100_mm500_jfj/es.parquet").
+    /// "breakdown/2026-02-20_13-07-24_a0_e100-100_mm500_jfj/es.parquet").
     /// Used for `-t` CLI matching when target is a parquet file.
     pub relative_path: String,
 }

@@ -21,7 +21,7 @@ def sanitize_for_filename(s: str, max_len: int = 50) -> str:
 
 def make_log_filename(timestamp: datetime.datetime, argv: Optional[list[str]] = None) -> str:
     '''Create log filename from timestamp and optional argv.'''
-    ts_str = timestamp.strftime('%Y-%m-%d-%H-%M-%S')
+    ts_str = timestamp.strftime('%Y-%m-%d_%H-%M-%S')
 
     if argv and len(argv) > 1:
         cmd_str = ' '.join(argv[1:])

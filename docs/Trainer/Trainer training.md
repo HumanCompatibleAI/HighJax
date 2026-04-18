@@ -92,7 +92,7 @@ All PPO hyperparameters live in `AgentConfig`:
 Training with trek enabled (the default) creates a timestamped directory under `~/.highjax/t/` (or `$HIGHJAX_HOME/t/`). Set `$HIGHJAX_HOME` to override the default `~/.highjax/` root. All data (treks, behaviors, config, logs) will use `$HIGHJAX_HOME/` instead.
 
 ```
-~/.highjax/t/2026-03-15-20-02-25-101327/
+~/.highjax/t/2026-03-15_20-02-25_101327/
   meta.yaml      # Environment config, git info, parameter counts
   sample_es.pq   # Sampled episode trajectories
   epochia.pq     # Epoch-level metrics

@@ -80,6 +80,6 @@ class TestCreateTrek:
         monkeypatch.setenv('HIGHJAX_HOME', str(tmp_path))
         trek_path = create_trek(env, params, agent_config)
         name = trek_path.name
-        pattern = r'^\d{4}-\d{2}-\d{2}-\d{2}-\d{2}-\d{2}-\d{6}$'
+        pattern = r'^\d{4}-\d{2}-\d{2}_\d{2}-\d{2}-\d{2}_\d{6}$'
         assert re.match(pattern, name), f'Name {name!r} does not match timestamp pattern'
         assert trek_path.parent == tmp_path / 't'

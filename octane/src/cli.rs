@@ -21,7 +21,7 @@ use crate::render::RenderConfig;
 use crate::util::{find_parquet_file, posh_path};
 
 /// Find the most recent trek in ~/.highjax/t/.
-/// Treks are directories with timestamp names (e.g., 2026-01-31-02-13-44-322216).
+/// Treks are directories with timestamp names (e.g., 2026-01-31_02-13-44_322216).
 /// Selects the newest by directory name.
 fn find_latest_trek() -> Option<PathBuf> {
     let home = std::env::var("HOME").ok()?;

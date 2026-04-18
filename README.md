@@ -112,7 +112,7 @@ octane
 Use Octane to make figures for your paper:
 
 ```bash
-octane draw -t ~/.highjax/t/2026-03-15-20-02-25-101327 --epoch 300 -e 0 --timestep 19 --theme light \
+octane draw -t ~/.highjax/t/2026-03-15_20-02-25_101327 --epoch 300 -e 0 --timestep 19 --theme light \
   --zoom 1.8 --png ~/figure.png
 ```
 

@@ -32,7 +32,7 @@ def _get_highjax_treks() -> pathlib.Path:
 def _make_timestamp_name() -> str:
     now = datetime.datetime.now()
     return (
-        now.strftime('%Y-%m-%d-%H-%M-%S-') + f'{now.microsecond:06d}'
+        now.strftime('%Y-%m-%d_%H-%M-%S_') + f'{now.microsecond:06d}'
     )
 
 

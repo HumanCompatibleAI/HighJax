@@ -207,7 +207,7 @@ class TestOzetteInstall:
         log_path = ozette.get_log_path()
         assert log_path.parent.name == 'logs'
         assert log_path.parent.parent.name == '.test_path_fmt'
-        assert re.match(r'\d{4}-\d{2}-\d{2}-\d{2}-\d{2}-\d{2}', log_path.name)
+        assert re.match(r'\d{4}-\d{2}-\d{2}_\d{2}-\d{2}-\d{2}', log_path.name)
         assert log_path.name.endswith('.log')
 
     def test_install_returns_instance(self, temp_base_dir):
