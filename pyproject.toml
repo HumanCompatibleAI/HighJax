@@ -3,8 +3,8 @@ requires = ["setuptools>=77.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "highjax-rl"
-version = "0.1.6"
+name = "highjax"
+version = "0.1.0"
 description = "HighJax: A JAX implementation of the HighwayEnv driving environment"
 readme = "README.md"
 license = "MIT"
