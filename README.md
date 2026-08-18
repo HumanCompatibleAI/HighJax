@@ -154,13 +154,15 @@ Full documentation is in the `docs/` folder:
 If you use HighJax in your research, please cite:
 
 ```bibtex
-@article{rachum2026bxrl,
-  title={BXRL: Behavior-Explainable Reinforcement Learning},
-  author={Ram Rachum and Yotam Amitai and Yonatan Nakar and Reuth Mirsky and Cameron Allen},
-  year={2026},
-  eprint={2603.23738},
-  archivePrefix={arXiv},
-  primaryClass={cs.LG},
-  url={https://arxiv.org/abs/2603.23738},
+@inproceedings{rachum2026bxrl,
+  title         = {BXRL: Behavior-Explainable Reinforcement Learning},
+  author        = {Rachum, Ram and Amitai, Yotam and Nakar, Yonatan and Mirsky, Reuth and Allen, Cameron},
+  booktitle     = {Proceedings of the Workshop on Explainable Artificial Intelligence (XAI) at IJCAI-ECAI 2026},
+  year          = {2026},
+  address       = {Bremen, Germany},
+  eprint        = {2603.23738},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2603.23738},
 }
 ```

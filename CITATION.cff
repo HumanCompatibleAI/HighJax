@@ -1,0 +1,52 @@
+cff-version: 1.2.0
+message: If you use HighJax in your research, please cite the BXRL paper.
+title: HighJax
+abstract: >-
+  HighJax is an autonomous driving environment for Reinforcement Learning
+  research, a JAX implementation of HighwayEnv. It includes Octane, a Rust-based
+  TUI for examining experiment runs.
+type: software
+authors:
+  - family-names: Rachum
+    given-names: Ram
+    email: ram@rachum.com
+    affiliation: University of California, Berkeley
+repository-code: https://github.com/HumanCompatibleAI/HighJax
+url: https://github.com/HumanCompatibleAI/HighJax
+license: MIT
+version: 0.1.0
+keywords:
+  - reinforcement-learning
+  - jax
+  - autonomous-driving
+  - explainable-ai
+preferred-citation:
+  type: conference-paper
+  title: 'BXRL: Behavior-Explainable Reinforcement Learning'
+  authors:
+    - family-names: Rachum
+      given-names: Ram
+    - family-names: Amitai
+      given-names: Yotam
+    - family-names: Nakar
+      given-names: Yonatan
+    - family-names: Mirsky
+      given-names: Reuth
+    - family-names: Allen
+      given-names: Cameron
+  year: 2026
+  collection-title: >-
+    Proceedings of the Workshop on Explainable Artificial Intelligence (XAI) at
+    IJCAI-ECAI 2026
+  conference:
+    name: >-
+      Workshop on Explainable Artificial Intelligence (XAI) at IJCAI-ECAI 2026
+    city: Bremen
+    country: DE
+    date-start: '2026-08-15'
+    date-end: '2026-08-16'
+  url: https://arxiv.org/abs/2603.23738
+  identifiers:
+    - type: other
+      value: arXiv:2603.23738
+      description: arXiv preprint
